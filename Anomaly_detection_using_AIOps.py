@@ -1,4 +1,5 @@
 import requests
+import json
 import time
 from prophet import Prophet
 import pandas as pd
@@ -98,8 +99,6 @@ plt.show()
 
 print("✅ Spike anomalies detected:", merged['pred_anomaly'].sum())
 
-import json
-import requests
 
 # Filter only spike anomalies
 anomalies = merged[merged['pred_anomaly'] == 1]
