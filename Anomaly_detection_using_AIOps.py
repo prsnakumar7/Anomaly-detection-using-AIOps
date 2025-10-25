@@ -121,8 +121,6 @@ else:
 
         print(json.dumps(log_entry, indent=2))
 
-        # --- Optional: uncomment this to send to a webhook/Loki later ---
-        # requests.post("http://<YOUR-WEBHOOK-URL>", json=log_entry)
 
 
 
